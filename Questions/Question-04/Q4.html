@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="./../../style.css">
+    <link rel="shortcut icon" href="icons8-3d-object-48.png" type="image/x-icon">
+    <title>Question-04</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Question-04</h1>
+    </div>
+    <article id="form-container">
+     <h3 id="form-heading" style="text-align: center;">User Information Form</h3>
+     <div id="form-content">
+        <div class="input-container">
+            <h5>Name :</h5>
+            <input type="text" placeholder="Enter Your Full Name" name="Name" id="name-input" class="inputField" required>
+        </div>
+        <div class="input-container">
+            <h5>Age :</h5>
+            <input type="number" placeholder="Enter Your Age" name="Age" id="age-input" class="inputField" min="0" required>
+        </div>
+        <div class="input-container">
+            <h5>Select Your Gender :</h5>
+            <input type="radio" name="Gender" value="Male" class="genderInputField" onclick="catchGender(this)">Male
+            <input type="radio" name="Gender" value="Female" class="genderInputField" onclick="catchGender(this)">Female
+        </div>
+        <div class="input-container">
+            <h5>Profession :</h5>
+            <input type="text" placeholder="Enter Your Profession" name="Profession" id="profession-input" class="inputField" required>
+        </div>
+        <div class="input-container">
+            <h5>Tell Your Education :</h5>
+            <input type="radio" name="education" value="Matriculation" class="educationInputField" onclick="catchEducation(this)">Matriculation
+            <input type="radio" name="education" value="Intermediate" class="educationInputField" onclick="catchEducation(this)">Intermediate
+            <input type="radio" name="education" value="Graduation" class="educationInputField" onclick="catchEducation(this)">Graduation
+        </div>
+        <button id="submit-btn" onclick="submitValues()">Submit</button>
+     </div>
+    <div id="info-container">
+
+    </div>
+    </article>
+    <script src="app4.js"></script>
+</body>
+</html>
